@@ -1,0 +1,67 @@
+<div class="container">
+	<header></header>
+	<div class="contents">
+		<section class="topMenuSection">
+	        <a href="javascript:hamburgerPop();" class="hamBtn"></a>
+			<span class="dateText"><?=date('Y. m. d')?></span>
+		</section>
+		<section class="listSection mainListSect">
+			<ul class="listGroup">
+				<li>
+					<div class="titleCase">온도</div>
+					<div class="infoCase statusSort">23.66</div>
+					<a href="/main/status" class="linkCover"></a>
+				</li>
+				<li>
+					<div class="titleCase">전류</div>
+					<div class="infoCase statusSort">5.00</div>
+					<a href="/main/status" class="linkCover"></a>
+				</li>
+				<li>
+					<div class="titleCase">센서</div>
+					<div class="infoCase statusSort">1.00</div>
+					<a href="/main/status" class="linkCover"></a>
+				</li>
+				<li>
+					<div class="titleCase">릴레이출력</div>
+					<div class="infoCase statusSort">24.00</div>
+					<a href="/main/status" class="linkCover"></a>
+				</li>
+				<li>
+					<div class="titleCase">TTL출력</div>
+					<div class="infoCase statusSort">9.95</div>
+					<a href="/main/status" class="linkCover"></a>
+				</li>
+				<li>
+					<div class="titleCase">o.c.출력</div>
+					<div class="infoCase statusSort">5.00</div>
+					<a href="/main/status" class="linkCover"></a>
+				</li>
+			</ul>
+		</section>
+	</div>
+	<div class="bottomTimeCheck">
+		<span class="fs16 fw_bold">마지막 측정시간 : </span>
+		<span class="fs16 fm_mon">2020-01-20 11:18:44</span>
+	</div>
+</div>
+<div class="popup hamburgerPop">
+    <div class="modal">
+        <a href="javascript:closeHamburger()">
+			<img src="<?=URL?>/image/close.png" class="close">
+		</a>
+        <ul class="menu">
+            <li><a href="/main/status">실시간측정</a></li>
+            <li><a href="/setting/record">기록조회</a></li>
+			<li><a href="/setting/systemSet">설정</a></li>
+			<li><a href="javascript:logout();">로그아웃</a></li>
+        </ul>
+        <div class="lastCom">마지막통신<br>
+            <span>2020-01-20 11:18:44</span>
+        </div>
+        <div class="timeDisplay">
+            <?=date('Y-m-d H:i:s')?>
+        </div>
+    </div>
+</div>
+<script src="<?=URL?>/js/index.js"></script>
