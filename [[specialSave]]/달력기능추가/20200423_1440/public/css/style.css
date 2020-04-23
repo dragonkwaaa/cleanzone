@@ -1,0 +1,823 @@
+html, body{
+	overflow:auto;
+	background-color : #F0E4E6;
+}
+
+.container{
+	max-width:450px;
+	margin:0 auto;
+	min-height: 100%;
+    /* margin:0px 25px 50px 25px; */
+}
+
+/* login */
+section.loginSection {
+	padding : 0 25px 160px 25px;
+}
+.logoImg {
+	background:url("/image/logo.png") no-repeat center / 100%;
+    width:147px;
+    height:102px;
+    text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+}
+section.loginSection .logoImg {
+	display:block;
+	margin: 0 auto;
+	padding : 120px 0;
+}
+/* .idInputCase {
+    display : block;;
+} */
+
+
+.container .tbox { 
+    background-color: #FFF8F9;
+    box-shadow: 0 2px 4px 0 #EED4D8;
+    border-radius: 10px;
+    font-family: 'noto sans';
+    font-weight: 300;
+    border:none;
+    width:100%;
+    height:50px;
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding : 0 20px;
+}
+
+.container .tbox.full {
+	width : calc(100% - 40px);
+}
+
+.container .tbox.dateBox {
+	width : 120px;
+	height : 36px;
+	line-height : 36px;
+	margin-bottom : 0;
+	border-radius : 0;
+	background-color : #eee;
+	border : 1px solid #ccc;
+}
+
+.contents {
+	width : 100%;
+	/* height : 100%; */
+	display : block;
+	position :relative;
+}
+
+
+.btnBox.login {
+	width:100%;
+	position:fixed;
+	bottom:0;
+    left:0;
+}
+
+.btnBox.login a {
+    background: #2E4393;
+    border-radius: 0 24px 0 0;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    width:100%;
+    height:54px;
+	cursor: pointer;
+	display : block;
+	line-height : 54px;
+}
+
+
+.checkCase input[type="checkbox"] {
+	background:url("/image/check01_off.png")left/22px no-repeat;
+	cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    vertical-align: middle;
+}
+.checkCase input[type="checkbox"]:checked {
+	background:url("/image/check01_on.png")left/22px no-repeat;
+	cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.chk_text {
+	display : inline-block;
+	vertical-align : middle;
+	color:#2E4393;
+    font-size:14px;
+}
+
+/* main */
+section.topMenuSection {
+	width:100%;
+    height:50px;
+    background:#2E4393;
+    line-height:50px;
+	position : relative;
+	text-align : center;
+}
+
+section.topMenuSection .prevBtn {
+	position : absolute;
+	top : 0;
+	left : 5px;
+	display : block;
+	height : 50px;
+	width : 50px;
+}
+section.topMenuSection .titleText {
+	font-family: 'montserrat';
+    font-size:17px;
+    color:#fff;
+	font-weight : 800;
+}
+
+.top_menu span {
+    font-family: 'montserrat';
+    font-size:14px;
+    color:#fff;
+    float:right;
+    margin-right:25px;
+}
+
+.all_box {
+    padding-top:11px;
+    margin: auto;
+}
+
+.box {
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 #EED4D8;
+    border-radius: 23px;
+    width:148px;
+    height:130px;
+    float:left;
+    margin-left:25px;
+    margin-top:14px;
+    text-align: center;
+}
+
+.box ul li:first-child {
+    font-weight:bold;
+    margin-top:25px;
+    font-size:14px;
+}
+
+.box ul li:last-child {
+    font-size:36px;
+    font-family: 'montserrat';
+    color:#2E4393;
+    margin-top: 18px;
+    font-weight: 600;
+}
+
+.last_time {
+    clear:both;
+    position: fixed;
+    bottom:25px;
+    left:50px;
+    font-weight: bold;
+}
+
+.last_time span {
+    font-family: 'montserrat';
+}
+
+
+/* setting */
+
+/* :: 세팅 페이지 파트 open  */
+section.tabSection {
+	/* border-bottom:1px solid #EDD6DB; */
+	width:100%;
+	height : auto;
+}
+
+section.tabSection .layerGroup {
+	border-bottom:1px solid #EDD6DB;
+	height : auto;
+	font-size : 0;
+}
+section.tabSection .layerGroup.groupSort1 {
+	padding : 0 25px;
+}
+section.tabSection .layerGroup a {
+	font-size : 16px;
+	/* width : 50%; */
+	display : inline-block;
+	text-align : center;
+	position : relative;
+	color :#2E4393;
+	font-weight : 800;
+	line-height : 50px;
+}
+section.tabSection .layerGroup.groupSort1 a,
+section.tabSection .layerGroup.groupSort2 a  {
+	width : 50%;
+}
+
+section.tabSection .layerGroup.groupSort1 a.activated:before {
+	content : "";
+	position : absolute;
+	left : 0;
+	bottom : 0;
+	border-bottom : 4px solid #2E4393;
+	width : 100%;
+}
+section.tabSection .layerGroup.groupSort2 {
+	margin-top : 4.5px;
+}
+section.tabSection .layerGroup.groupSort2 a.activated {
+	background-color: #2e4393;
+	color : #fff;
+	border-radius : 0 20px 0 0;
+}
+
+section.listSection.recordSect {
+	margin : 25px 0 50px;
+	padding : 0 25px;
+}
+
+.listGroup li {
+	background-color : #fff;
+	padding : 20px;
+	display : block;
+	border-radius : 18px;
+	box-shadow : 0 2px 4px 0 #EED4D8;
+	margin-bottom : 10px;
+}
+
+.listGroup li.listEmptyNotice {
+	background-color : transparent;
+	font-size : 16px;
+	font-weight : 800;
+	box-shadow : none;
+	text-align : center;
+	margin-top : 80px;
+}
+.listGroup li {
+	font-size : 14px;
+}
+.listGroup li div.recordInfo {
+	margin-top : 15px;
+}
+
+/* :: 세팅 페이지 파트 close  */
+
+
+
+/* :: 메인 페이지 파트 open */
+section.topMenuSection .hamBtn {
+	position : absolute;
+	top : 0;
+	left : 10px;
+	display : block;
+	height : 50px;
+	width : 50px;
+}
+section.topMenuSection .dateText {
+	position : absolute;
+	top : 0;
+	right : 25px;
+	font-family: 'montserrat';
+    font-size: 14px;
+    color: #fff;
+}
+
+section.listSection.mainListSect {
+	padding : 25px 25px 100px 25px;
+	font-size : 0;
+}
+section.listSection.mainListSect .listGroup li {
+	width : calc(50% - 7px);
+	display : inline-block;
+	margin-right : 14px;
+	margin-bottom : 14px;
+	text-align : center;
+	padding : 25px 0;
+	position : relative;
+}
+section.listSection.mainListSect .listGroup li:nth-child(2n) {
+	margin-right : 0;
+}
+
+section.listSection.mainListSect .listGroup li a.linkCover {
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+}
+
+.listGroup li .titleCase {
+	font-weight: bold;
+	font-size: 14px;
+	/* margin-bottom : 14px; */
+	min-height : 28px;
+}
+.listGroup li .infoCase.statusSort {
+	font-size: 36px;
+    font-family: 'montserrat';
+    color: #2E4393;
+    margin-top: 30px;
+    font-weight: 800;
+}
+
+@media (max-width : 359px) {
+	.listGroup li .infoCase.statusSort {
+		font-size: 8.056vw;
+	}
+}
+
+.bottomTimeCheck {
+    /* position: absolute; */
+	bottom : 0;
+	left : 0;
+	display : block;
+	width : calc(100% - 25px);
+	padding : 0 0 25px 25px;
+}
+.bottomTimeCheck.stopped {
+	position : initial;
+	display : block;
+}
+/* :: 메인 페이지 파트 close */
+
+
+/* :: 햄버거메뉴 팝업 파트 open */
+.overlay:before,
+.hamOverlay:before {
+	content : "";
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 100%;
+	background-color : rgba(0,0,0,0.50);
+	z-index : 100;
+}
+.popup {
+	display : none;
+	position:fixed;
+	z-index : 101;
+}
+.popup.hamburgerPop {
+	width:295px;
+    height:100%;
+    top:0;
+    left:0;
+}
+/* :: 햄버거메뉴 팝업 파트 close */
+
+
+
+/* :: (사용중) 올드버전 햄버거 open */
+/* menu_pop */
+.popup.hamburgerPop .modal {
+    width:295px;
+    height:100%;
+    background: #2E4393;
+    border-radius: 0 60px 0 0;
+    color:#fff;
+    padding-left:25px;
+}
+
+.popup.hamburgerPop .close {
+    float:right;
+    margin-right:30px;
+    margin-top:30px;
+}
+
+.popup.hamburgerPop .menu {
+    clear:both;
+    font-size:24px;
+    font-weight:bold;
+    padding-top:30px;
+}
+
+.popup.hamburgerPop .menu li {
+    margin-bottom:25px;
+}
+
+.popup.hamburgerPop .lastCom {
+    padding-top: 20px;
+    font-size:16px;
+	font-weight: 300;
+	line-height : 22px;
+}
+
+.popup.hamburgerPop .lastCom span {
+    font-family: 'montserrat';
+}
+
+.popup.hamburgerPop .timeDisplay {
+    font-family: 'montserrat';
+    position:fixed;
+    bottom:25px;
+    left:25px;
+    font-weight: 600;
+}
+/* :: (사용중) 올드버전 햄버거 close */
+
+
+
+/* :: 시스템 설정 페이지 파트 open */
+section.settingSection {
+	padding : 20px 25px 100px 25px;
+}
+
+.infoBox {
+	display : block;
+	margin-bottom : 20px;
+	font-weight : 600;
+}
+.infoBox .title {
+	font-size : 14px;
+	margin-bottom : 10px;
+}
+.infoBox input {
+	width : calc(100% - 40px);
+	height :50px;
+	padding : 0 20px;
+	border-radius: 10px;
+  	box-shadow: 0 2px 4px 0 #eed4d8;
+	 background-color: #fff8f9;
+	 font-size : 14px;
+}
+
+/* :: 시스템 설정 페이지 파트 close */
+
+
+/* :: 기록조회 페이지 파트 open  */
+section.tabSection .layerGroup.statusTabSort {
+	font-size : 0;
+	height : auto;
+	overflow: auto;
+	white-space: nowrap;
+}
+
+/* :: 슬라이드 아닌 탭의 색상 변환 open */
+section.tabSection .layerGroup.statusTabSort li.activated {
+	background-color: #2e4393;
+	border-radius : 0 20px 0 0;
+}
+section.tabSection .layerGroup.statusTabSort li.activated a {
+	color : #fff;
+}
+/* :: 슬라이드 아닌 탭의 색상 변환 close */
+
+
+/* :: 슬라이드 탭의 색상 변환 open */
+section.tabSection .layerGroup .slick-active.activated {
+	background-color: #2e4393;
+	border-radius : 0 20px 0 0;
+}
+section.tabSection .layerGroup .slick-active.activated a {
+	color : #fff;
+}
+/* :: 슬라이드 탭의 색상 변환 close */
+
+
+
+section.tabSection .layerGroup.statusTabSort li {
+	/* width : 103px; */
+	width : 125px;
+	font-size : 16px;
+	line-height : 50px;
+	display : inline-block;
+	text-align : center;
+}
+section.infoSection {
+	/* padding : 25px 0 100px 0; */
+	padding : 0 0 100px 0;
+}
+section.infoSection .statusCase {
+	display : inline-block;
+	width : calc(100% - 50px) !important;
+	padding : 0 25px;
+}
+section.tabSection .slick-slide {
+	height : auto;
+}
+section.infoSection .slick-slide {
+	height : auto;
+}
+.chartGroup.statusSort {
+	background-color : #fff;
+	border-radius : 18px;
+	box-shadow: 0 2px 4px 0 #eed4d8;
+	padding : 22px 0 21px 0;
+}
+.chartGroup.statusSort canvas {
+    /* width: 86.111vw !important; */
+	/* height: 56.389vw !important; */
+	/* max-width : 450px !important; */
+	/* max-height : 254px !important; */
+	/* padding : 22px 0 21px 0; */
+	margin : 0 auto;
+}
+.recordListGroup {
+	background-color : #fff;
+	border-radius : 18px;
+	box-shadow: 0 2px 4px 0 #eed4d8;
+}
+.recordListGroup .topPagerBox {
+	padding : 15px 10px;
+	font-size : 14px;
+}
+.topPagerBox .absoluteMR {
+	right : 15px;
+}
+.topPagerBox .absoluteMR .arrowPrev,
+.topPagerBox .absoluteMR .arrowNext {
+	display : inline-block;
+	width : 15px;
+}
+
+ul.timeList {
+	font-size : 0;
+	border-top : 1px solid #edd6db;
+}
+ul.timeList li {
+	border-bottom : 1px solid #edd6db;
+	border-right : 1px solid #edd6db;
+	width : calc(20% - 0.8px);
+	text-align : center;
+	display : inline-block;
+}
+ul.timeList li div {
+	font-size : 14px;
+	padding : 13px 0;
+}
+ul.timeList li div:first-child {
+	color : #2e4393;
+	background-color : #fff8f9;
+}
+ul.timeList li div + div {
+	border-top : 1px solid #edd6db;
+
+}
+ul.timeList li:nth-child(5n) {
+	border-right : none;
+}
+
+section.dateScrollSection {
+	padding : 30px 25px 15px 25px;
+	background-color : #fff;
+}
+section.dateScrollSection .monthDisplayGroup {
+	font-size : 0;
+	text-align : center;
+}
+section.dateScrollSection .monthDisplayGroup span {
+	font-size : 16px;
+	color : #2e4393;
+	font-weight : 600;
+	vertical-align : middle;
+}
+section.dateScrollSection .monthDisplayGroup i {
+	vertical-align : middle;
+}
+
+.layerGroup.dateSort {
+	font-size : 0;
+	height : auto;
+	overflow: auto;
+	white-space: nowrap;
+	margin-top : 25px;
+	padding-bottom : 15px;
+	text-align : center;
+}
+
+.layerGroup.dateSort li {
+	width : auto;
+	display : inline-block;
+	text-align : center;
+	margin-right : 40px;
+	cursor : pointer;
+}
+.layerGroup.dateSort li:last-child {
+	margin-right : 0;
+}
+.layerGroup.dateSort li.holiday {
+	color : #df0d0d;
+}
+.layerGroup.dateSort li .weekdayText {
+	font-size : 14px;
+}
+.layerGroup.dateSort li .dayText {
+	font-size : 16px;
+	font-weight : 600;
+	margin-top : 20px;
+}
+.layerGroup.dateSort li.activated .dayText {
+	color : #fff;
+	position : relative;
+	z-index : 1;
+	
+}
+.layerGroup.dateSort li.activated .dayText:after {
+	content : "";
+	position : absolute;
+	top : -11px;
+	left : -11px;
+	border-radius : 50%;
+	background-color : #2E4393;
+	width : 37px;
+	height : 37px;
+	z-index : -1;
+}
+
+.fixedR.pageUpSort {
+	position  : fixed;
+	bottom : 27px;
+	right : 39px;
+}
+
+
+section.infoSection .statusTab.channelSort {
+	font-size: 0;
+	height: auto;
+	width : calc(100% + 50px);
+	border-bottom : 1px solid #edd6db;
+	margin : 0 -25px 150px -25px;
+}
+section.infoSection .statusTab.channelSort li {
+    width: 50%;
+    font-size: 16px;
+    line-height: 50px;
+    display: inline-block;
+    text-align: center;
+}
+section.infoSection .statusTab.channelSort.quadMod li {
+	width : 25%;
+}
+section.infoSection .statusTab.channelSort li.activated {
+	border-radius: 0 20px 0 0;
+	border-bottom : 4px solid #2E4393;
+}
+section.infoSection .statusTab.channelSort a {
+    font-size: 16px;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: #2E4393;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.hide {
+	display : none;
+}
+
+
+
+/* :: 기록조회 페이지 파트 close  */
+
+
+/* :: 웹 화면 표시 파트 open  */
+.container.webSort {
+	/* max-width : 1180px; */
+	max-width : 1920px;
+}
+.container.webSort header {
+	padding : 15px 10px;
+	font-size : 16px;
+	background-color : #2E4393;
+	color : #fff;
+}
+.container.webSort .tableGroup {
+	margin-top : 20px;
+	padding : 0 20px;
+}
+
+
+
+/* :: ksg_20200423_1220 single : 기간 선택 작업물이 들어가야 할 공간.  */
+
+
+
+
+
+
+
+
+.container.webSort .tableBox table.listTable {
+	border : 1px solid #ccc;
+}
+.container.webSort .tableBox table.listTable th,
+.container.webSort .tableBox table.listTable td {
+	border : 1px solid #ccc;
+	padding : 10px 5px;
+	text-align : center;
+	font-size : 13px;
+}
+.container.webSort .tableBox table.listTable th {
+	background-color : #C7CEE5;
+}
+/* :: 웹 화면 표시 파트 close  */
+
+
+
+
+
+
+
+
+
+
+
+/* :: ksg_20200423_1220 open : 기간 선택 작업물 진행 공간.  */
+.container.webSort .tableMenu {
+	margin-bottom : 20px;
+	border : 1px solid  #ccc;
+}
+
+.container.webSort .tableMenu tr {
+	border-bottom : 1px solid  #ccc;
+}
+.container.webSort .tableMenu tr:last-child {
+	border-bottom : none;
+}
+.container.webSort .tableMenu th {
+	border-right : 1px solid  #ccc;
+	background-color: #C7CEE5;
+}
+
+.container.webSort .tableMenu td {
+	border-right : 1px solid  #ccc;
+}
+.container.webSort .tableMenu td {
+	padding : 5px 20px;
+}
+.container.webSort .tableMenu td:last-child {
+	border-right : none;
+}
+
+.container.webSort .tableMenu .sbox {
+	display : inline-block;
+	margin-right : 10px;
+	position: relative;
+	border: 1px solid #cccccc;
+}
+.container.webSort .tableMenu .sbox:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(/image/icon_sbox_arrow.png) no-repeat center / cover;
+    width: 8px;
+    height: 6px;
+}
+.container.webSort .tableMenu .sbox select {
+	background-color: #fff;
+	outline: none;
+	width: 100%;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	height: 36px;
+	padding: 0 30px 0 10px;
+	font-size: 12px;
+}
+.container.webSort .tableMenu .btnGroup {
+	display : inline-block;
+}
+.container.webSort .tableMenu .btnGroup a {
+	display : inline-block;
+	width : 60px;
+	height : 36px;
+	font-size : 14px;
+	text-align : center;
+	line-height : 36px;
+	background-color : #fefefe;
+	border : 1px solid #ccc;
+	border-radius : 10px;
+}
+
+
+
+
+/* :: ksg_20200423_1220 close : 기간 선택 작업물 진행 공간.  */
