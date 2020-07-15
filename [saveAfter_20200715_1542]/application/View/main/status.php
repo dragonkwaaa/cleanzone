@@ -7,10 +7,22 @@
 		</section>
 		<section class="dateScrollSection">
 			<div class="monthDisplayGroup">
-				<span><?=date('Y.m')?></span>
-				<i class="calendarIcon ml10"></i>
+				<!-- <span><?=date('Y.m')?></span>
+				<i class="calendarIcon ml10"></i> -->
+
+
+                <div class="dateBoxGroup">
+                    <input class="tbox dateBox statTopSort" id="startDate" readonly="">
+                    <i class="calendarIcon datePR"></i>
+                </div>
+                    
+
+
+
+
+
 			</div>
-			<ul class="layerGroup dateSort">
+			<!-- <ul class="layerGroup dateSort">
 				<?php
 				while (strtotime($preDay) <= strtotime($today)) {
 					echo '<li class="'.($date[date("w", strtotime($preDay))] == '일' || $date[date("w", strtotime($preDay))] == '토' ? 'holiday' : '').($preDay == date('Y-m-d', strtotime('20'.$searchDate)) ? ' activated' : '').'" onclick="select_recordDate('.date('ymd', strtotime($preDay)).')">';
@@ -20,7 +32,7 @@
 					$preDay = date ("Y-m-d", strtotime("+1 day", strtotime($preDay)));
 				}
 				?>
-			</ul>
+			</ul> -->
 		</section>
 		<section class="tabSection">
 			<ul class="layerGroup statusTabSort">
@@ -128,5 +140,6 @@
 <script>
 	// 차트
 </script>
+<script src="/js/common/datePick.js"></script>
 <script src="/js/common/Chart.min.js"></script>
 <script src="/js/main/status.js"></script>
